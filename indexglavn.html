@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="acess/css/style.css">
+    <title>anime site</title>
+    <script src="acess/js/js.js"></script>
+    <center><iframe class="opros" src="https://docs.google.com/forms/d/e/1FAIpQLScY2A6WLk7kcpKOr9x2LsbaGqP-ceQe_adUT3V6nLOqvhV9fw/viewform?embedded=true" width="275" height="500" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe></center>
+</head>
+<body>
+    
+    <div class="head">
+        <div class="container_head">
+				<h1 class="head__title"><font color="#FFB6C1">Anime</font>hunter</h1>
+            
+            <img class="img" src="acess/img/fon.png" alt="">
+        </div>
+    </div>
+
+    
+    <div class="a">
+        <div class="container">
+            <div class="anime">
+                <div id="glav" class="nav_anime">
+                    <section class="nav_anime_sect">
+                        <a class="nav_anime_word" href="#glav">ГЛАВНАЯ</a>
+                        <a class="nav_anime_word" href="#new">НОВИНКИ СЕЗОНА</a>
+                        <a class="nav_anime_word" href="#genres">ЖАНРЫ</a>
+                        <a class="nav_anime_word" href="#top">ТОП 10 АНИМЕ</a>
+                        <a class="nav_anime_word" href="#value">ОПРОС</a>
+                    </section> 
+                    <form class="nav_anime_search" action="" method="get">
+                        <script type="text/javascript">
+                            var lastResFind=""; 
+                            var copy_page="";
+                            function TrimStr(s) {
+                                s = s.replace( /^\s+/g, '');
+                            return s.replace( /\s+$/g, '');
+                            }
+                            function FindOnPage(inputId) {
+                            var obj = window.document.getElementById(inputId);
+                            var textToFind;
+                          
+                            if (obj) {
+                                textToFind = TrimStr(obj.value);
+                            } else {
+                                alert("Введенная фраза не найдена");
+                                return;
+                            }
+                            if (textToFind == "") {
+                                alert("Вы ничего не ввели");
+                                return;
+                            }
+                           
+                            if(document.body.innerHTML.indexOf(textToFind)=="-1")
+                            alert("Ничего не найдено, проверьте правильность ввода!");
+                           
+                            if(copy_page.length>0)
+                                    document.body.innerHTML=copy_page;
+                            else copy_page=document.body.innerHTML;
+                         
+                           
+                            document.body.innerHTML = document.body.innerHTML.replace(eval("/name="+lastResFind+"/gi")," ");
+                            document.body.innerHTML = document.body.innerHTML.replace(eval("/"+textToFind+"/gi"),"<a name="+textToFind+" style='background-color:#fff891; color: grey; border: 1px solid #cea54c;'>"+textToFind+"</a>");
+                            lastResFind=textToFind;
+                            window.location = '#'+textToFind;
+                            } 
+                            </script>
+					    <input  id="text-to-find" autocomplete="off" class="search1" name="s" placeholder="  Поиск ..." type="search">
+					    <button onclick="javascript: FindOnPage('text-to-find'); return false;" class="but" type="submit"><img class="nav_img" src="acess/img/icon_sart.png" alt=""></button>
+				    </form>
+                    
+                    <a class="nav_regist" href="index.html">Регистрация</a>
+                        <div class="nav_vhod_block"><a class="nav_vhod" href="index.html">Вход</a></div>
+                        <div class="menu"></div>
+                </div>
+
+                
+
+                <div id="new" class="new">
+                    Новинки сезона
+                </div>
+                <div class="new_block">
+                    <section>
+                        <img class="new_img" src="acess/img/img1.png" alt=""><div class="new_block1"><a href="meme.html" class="new_block_text">Не издевайся, Нагаторо</a></div>
+                        <img class="new_img" src="acess/img/img2.png" alt=""><div class="new_block2"><a href="meme.html" class="new_block_text">Зомбилэнд-Сага: Месть</a></div>
+                        <img class="new_img" src="acess/img/img3.png" alt=""><div class="new_block3"><a href="meme.html" class="new_block_text">Моя геройская академия 5</a></div>
+                        <img class="new_img4" src="acess/img/img4.png" alt=""><div class="new_block4"><a href="meme.html" class="new_block_text">Я побрился затем привёл старшеклассницу домой<a></div>
+                        <img class="new_img5" src="acess/img/img5.png" alt=""><div class="new_block5"><a href="meme.html" class="new_block_text">Всемогущая магия святого</a></div>
+                        <img class="new_img6" src="acess/img/img6.png" alt=""><div class="new_block6"><a href="meme.html" class="new_block_text_booo">Случайное такси</a></div>
+            </section>
+                </div>
+
+
+            
+                <div class="see_anime">Смотреть аниме онлайн бесплатно</div>
+                <img class="see_img1" src="acess/img/1.png" alt=""><div class="see_anime_word1"><a class="text_see_silka" href="see.html">Стальной алхимик: Братство</a></div>
+                <img class="see_img2" src="acess/img/2.png" alt=""><div class="see_anime_word2"><a class="text_see_silka" href="anime2.html">Атака титанов 3. Часть 2</a></div>
+                <img class="see_img3" src="acess/img/3.png" alt=""><div class="see_anime_word3"><a class="text_see_silka" href="anime3.html">Гинтама 4</a></div>
+                <img class="see_img4" src="acess/img/4.png" alt=""><div class="see_anime_word4"><a class="text_see_silka" href="anime4.html">Hunter x Hunter</a></div>
+                <img class="see_img5" src="acess/img/5.png" alt=""><div class="see_anime_word5"><a class="text_see_silka" href="anime5.html">Форма голоса</a></div>
+                <img class="see_img6" src="acess/img/6.png" alt=""><div class="see_anime_word6"><a class="text_see_silka" href="anime6.html">Цикл историй</a></div>
+                <img class="see_img7" src="acess/img/7.png" alt=""><div class="see_anime_word7"><a class="text_see_silka" href="anime7.html">Созданный в Бездне</a></div>
+                <img class="see_img8" src="acess/img/8.png" alt=""><div class="see_anime_word8"><a class="text_see_silka" href="anime8.html">Код Гиас: Восставший Лелуш</a></div>
+                <img class="see_img9" src="acess/img/9.png" alt=""><div class="see_anime_word9"><a class="text_see_silka" href="anime9.html">Твоя апрельская ложь</a></div>
+                <img class="see_img10" src="acess/img/10.png" alt=""><div class="see_anime_word10"><a class="text_see_silka" href="anime10.html">Крутой учитель Онидзука</a></div>
+                <img class="see_img11" src="acess/img/11.png" alt=""><div class="see_anime_word11"><a class="text_see_silka" href="anime11.html">Гуррен-Лаганн</a></div>
+                <img class="see_img12" src="acess/img/12.png" alt=""><div class="see_anime_word12"><a class="text_see_silka" href="anime12.html">Мастера меча онлайн 1 сезон</a></div>
+
+
+
+
+
+
+
+                <div id="genres" class="genres">
+                    Жанры
+                </div>
+                <div class="genres_block">
+                    <table>
+                        <tr>
+                            <th class="genres_a"><a class="genres_ssil" href="meme.html">Приключения</a></th>
+                            <th class="genres_a"><a class="genres_ssil" href="meme.html">Боевик</a></th>
+                        </tr>
+                        <tr>
+                            <th class="genres_a"><a class="genres_ssil" href="meme.html">Повседневность</a></th>
+                            <th class="genres_a"><a class="genres_ssil" href="meme.html">Комедия</a></th>
+                        </tr>
+                        <tr>
+                            <th class="genres_a"><a class="genres_ssil" href="meme.html">Романтика</a></th>
+                            <th class="genres_a"><a class="genres_ssil" href="meme.html">Драма</a></th>
+                        </tr>
+                        <tr>
+                            <th class="genres_a"><a class="genres_ssil" href="meme.html">Фантастика</a></th>
+                            <th class="genres_a"><a class="genres_ssil" href="meme.html">Фэнтези</a></th>
+                        </tr>
+                        <tr>
+                            <th class="genres_a"><a class="genres_ssil" href="meme.html">Мистика</a></th>
+                            <th class="genres_a"><a class="genres_ssil" href="meme.html">Детектив</a></th>
+                        </tr>
+                        <tr>
+                            <th class="genres_a"><a class="genres_ssil" href="meme.html">Психология</a></th>
+                            <th class="genres_a"><a class="genres_ssil" href="etty.html">Этти</a></th>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+
+                <div id="top" class="top">
+                    Топ 10 аниме
+                </div>
+                <div class="top_block">
+                    <img class="top_img" src="acess/img/12.png" alt=""><p class="top_text">Мастера меча онлайн 1 сезон</p>
+                    <img class="top_img2" src="acess/img/7.png" alt=""><p class="top_text2">Созданный в Бездне</p>
+                    <img class="top_img3" src="acess/img/best3.jpg" alt=""><p class="top_text3">Наруто:Ураганные хроники</p>
+                    <img class="top_img4" src="acess/img/best4.jpg" alt=""><p class="top_text4">Токийский гуль</p>
+                    <img class="top_img5" src="acess/img/best5.jpg" alt=""><p class="top_text5">Клинок рассекающий демонов</p>
+                    <img class="top_img6" src="acess/img/best6.jpg" alt=""><p class="top_text6">Ван пис</p>
+                    <img class="top_img7" src="acess/img/1.png" alt=""><p class="top_text7">Стальной алхимик:Братство</p>
+                    <img class="top_img8" src="acess/img/4.png" alt=""><p class="top_text8">Охотник Х охотник</p>
+                    <img class="top_img9" src="acess/img/best8.png" alt=""><p class="top_text9">Тетрадь смерти</p>
+                    <img class="top_img10" src="acess/img/best10.png" alt=""><p class="top_text10">Моб психо 100</p>
+                </div>
+
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
