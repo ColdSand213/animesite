@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="acess/css/see.css">
+    <title>see</title>
+</head>
+<body>
+    <div class="block">
+        <div class="container">
+
+
+
+
+
+
+
+
+            <div class="naity">
+                <div class="center">
+                <form class="nav_anime_search" action="" method="get">
+                    <script type="text/javascript">
+                        var lastResFind=""; 
+                        var copy_page="";
+                        function TrimStr(s) {
+                            s = s.replace( /^\s+/g, '');
+                        return s.replace( /\s+$/g, '');
+                        }
+                        function FindOnPage(inputId) {
+                        var obj = window.document.getElementById(inputId);
+                        var textToFind;
+                      
+                        if (obj) {
+                            textToFind = TrimStr(obj.value);
+                        } else {
+                            alert("Введенная фраза не найдена");
+                            return;
+                        }
+                        if (textToFind == "") {
+                            alert("Вы ничего не ввели");
+                            return;
+                        }
+                       
+                        if(document.body.innerHTML.indexOf(textToFind)=="-1")
+                        alert("Ничего не найдено, проверьте правильность ввода!");
+                       
+                        if(copy_page.length>0)
+                                document.body.innerHTML=copy_page;
+                        else copy_page=document.body.innerHTML;
+                     
+                       
+                        document.body.innerHTML = document.body.innerHTML.replace(eval("/name="+lastResFind+"/gi")," ");
+                        document.body.innerHTML = document.body.innerHTML.replace(eval("/"+textToFind+"/gi"),"<a name="+textToFind+" style='background-color:#fff891; color: grey; border: 1px solid #cea54c;'>"+textToFind+"</a>");
+                        lastResFind=textToFind;
+                        window.location = '#'+textToFind;
+                        } 
+                        </script>
+                    <input  id="text-to-find" autocomplete="off" class="search1" name="s" placeholder="  Поиск ..." type="search">
+                    <button onclick="javascript: FindOnPage('text-to-find'); return false;" class="but" type="submit"><img class="nav_img" src="acess/img/icon_sart.png" alt=""></button>
+                </form>
+            </div>
+            </div>
+
+
+            
+
+
+            <div class="kino">
+                <video class="video" controls width="700px" height="500px" src="acess/img/video/2.mp4"></video>
+
+
+                <button class="butt"><a class="a" href="indexglavn.html">На главную</a></button>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
